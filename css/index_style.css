@@ -1,0 +1,132 @@
+
+
+body
+{
+	font-family: 'segoe ui light';
+    overflow: hidden;
+}
+#loading
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: tomato;
+    z-index: 99999999999;
+}
+#btnUp
+{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+header
+{
+    height: 620px;
+    background-image: url(../images/1.jpg);
+    background-size: cover;
+}
+.parent
+{
+	height: 400px;
+	background-color: #09c;
+
+}
+.parent .item 
+{
+	height: 100px;
+	background-color: tomato;
+	width: 22%;
+}
+#options-container
+{
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    z-index: 99999;
+}
+#options-box
+{
+    background-color: #ccc;
+    float: left;
+    border: solid 3px teal;
+    padding: 10px;
+    position: relative;
+}
+#options-box img
+{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+#options-container ul li 
+{
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    display: inline-block;
+    cursor: pointer;
+}
+#options-container i
+{
+    float: left;
+    padding: 10px;
+    background-color: teal;
+    color: #fff;
+    cursor: pointer;
+}
+
+.spinner {
+  margin: 250px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #fff;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
